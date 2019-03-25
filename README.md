@@ -1,6 +1,6 @@
 # How to debug Rust apps on Android with CLion
 
-Say you've built and deployed a Rust library on Android following [these steps](https://mozilla.github.io/firefox-browser-architecture/experiments/2017-09-21-rust-on-android.html). In order to debug via rust-gdb or graphically with CLion follow these steps:
+Say you've built and deployed a Rust library on Android following [these steps](https://mozilla.github.io/firefox-browser-architecture/experiments/2017-09-21-rust-on-android.html). In order to debug via rust-gdb or graphically with CLion do the following:
 
 - Stop gradle from stripping your Rust .so files of debug symbols by adding `packagingOptions.doNotStrip "**/*.so"` to `app/build.gradle`
 
